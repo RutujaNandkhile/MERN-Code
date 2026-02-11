@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram UI Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fafafa;
+    display:flex;
+}
+
+/* LEFT SIDEBAR */
+.sidebar{
+    width:250px;
+    height:100vh;
+    padding:20px;
+    border-right:1px solid #ddd;
+    position:fixed;
+    background:#fff;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:12px 0;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.sidebar ul li:hover{
+    font-weight:bold;
+}
+
+/* MAIN FEED */
+.main{
+    margin-left:250px;
+    width:100%;
+    max-width:600px;
+    padding:20px;
+}
+
+/* STORIES */
+.stories{
+    display:flex;
+    overflow-x:auto;
+    background:#fff;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.story{
+    margin-right:15px;
+    text-align:center;
+}
+
+.story img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid #ff0066;
+}
+
+/* POST */
+.post{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.post-header{
+    display:flex;
+    align-items:center;
+    padding:10px;
+}
+
+.post-header img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.post-img{
+    width:100%;
+}
+
+.post-actions{
+    padding:10px;
+    display:flex;
+    gap:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.post-caption{
+    padding:0 10px 10px;
+    font-size:14px;
+}
+
+/* RIGHT PANEL */
+.right-panel{
+    width:300px;
+    padding:20px;
+    display:block;
+}
+
+.suggestions{
+    background:#fff;
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+.suggestion{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.suggestion img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+/* MOBILE NAV */
+.mobile-nav{
+    display:none;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#fff;
+    border-top:1px solid #ddd;
+    justify-content:space-around;
+    padding:10px 0;
+    font-size:20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:1100px){
+    .right-panel{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+    .sidebar{
+        display:none;
+    }
+
+    .main{
+        margin-left:0;
+        max-width:100%;
+        padding-bottom:70px;
+    }
+
+    .mobile-nav{
+        display:flex;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>Instagram</h2>
+    <ul>
+        <li>🏠 Home</li>
+        <li>🔍 Search</li>
+        <li>🎬 Reels</li>
+        <li>💬 Messages</li>
+        <li>❤️ Notifications</li>
+        <li>➕ Create</li>
+        <li>👤 Profile</li>
+    </ul>
+</div>
+
+<!-- MAIN FEED -->
+<div class="main">
+
+    <!-- STORIES -->
+    <div class="stories">
+        <div class="story">
+            <img src="https://via.placeholder.com/60">
+            <p>User1</p>
+        </div>
+        <div class="story">
+            <img src="https://via.placeholder.com/60">
+            <p>User2</p>
+        </div>
+        <div class="story">
+            <img src="https://via.placeholder.com/60">
+            <p>User3</p>
+        </div>
+        <div class="story">
+            <img src="https://via.placeholder.com/60">
+            <p>User4</p>
+        </div>
+    </div>
+
+    <!-- POST -->
+    <div class="post">
+        <div class="post-header">
+            <img src="https://via.placeholder.com/35">
+            <strong>username</strong>
+        </div>
+
+        <img class="post-img" src="https://via.placeholder.com/600x400">
+
+        <div class="post-actions">
+            ❤️ 💬 📤
+        </div>
+
+        <div class="post-caption">
+            <strong>username</strong> This is a sample Instagram post UI design.
+        </div>
+    </div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="right-panel">
+    <div class="suggestions">
+        <h4>Suggestions For You</h4>
+
+        <div class="suggestion">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <img src="https://via.placeholder.com/35">
+                <span>suggested_user</span>
+            </div>
+            <button style="background:none;border:none;color:#0095f6;cursor:pointer;">Follow</button>
+        </div>
+
+        <div class="suggestion">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <img src="https://via.placeholder.com/35">
+                <span>another_user</span>
+            </div>
+            <button style="background:none;border:none;color:#0095f6;cursor:pointer;">Follow</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- MOBILE NAVIGATION -->
+<div class="mobile-nav">
+    🏠 🔍 ➕ ❤️ 👤
+</div>
+
+</body>
+</html>

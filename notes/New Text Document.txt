@@ -1,2 +1,7 @@
 what is nodejs
 what module and type of module
+what is nextjs
+what is middle ware
+what is nextjs
+what is mvc architechre
+what is middleware
