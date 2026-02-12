@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .highlight {
+      color: #ffc107;
+    }
+
+    .card-custom {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      transition: 0.4s;
+      border: none;
+      height: 100%;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .form-control {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: white;
+    }
+
+    .form-control::placeholder {
+      color: #ddd;
+    }
+
+    .form-control:focus {
+      background: rgba(255,255,255,0.15);
+      box-shadow: none;
+      color: white;
+    }
+
+    .btn-warning {
+      font-weight: 600;
+      padding: 10px 25px;
+    }
+  </style>
+</head>
+
+<body style="padding-top:80px">
+
+<%- include("navbar") %>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Contact <span class="highlight">Me</span></h2>
+      <p>Let’s build something amazing together 🚀</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <div class="card-custom text-center">
+          <h5>Email</h5>
+          <p>example@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom text-center">
+          <h5>Phone</h5>
+          <p>9876543210</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom text-center">
+          <h5>Location</h5>
+          <p>India</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="card-custom">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+
+            <div class="mb-3">
+              <textarea rows="5" class="form-control" placeholder="Your Message"></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-warning">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

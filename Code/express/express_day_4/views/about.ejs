@@ -9,6 +9,11 @@
     <h1>Home About Page</h1>
     <hr>
     <h1>Hello your name is <%= data.name%></h1>
+     <% for (let i = 1; i <= 100; i++) { %>
+    <% if (i % 2 === 0) { %>
+        <p><%= i %></p>
+    <% } %>
+<% } %>
     <!-- syntax-
     
     

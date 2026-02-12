@@ -1,0 +1,68 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar-custom {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 60px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hero span {
+  color: #ffc107;
+}
+
+/* ==========================
+   PAGE CONTENT
+========================== */
+
+.page-content {
+  padding-top: 120px;
+}

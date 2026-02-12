@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-weight: bold;
+    }
+
+    .card-custom {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border: none;
+      border-radius: 15px;
+      padding: 30px;
+      transition: 0.4s;
+      height: 100%;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .highlight {
+      color: #ffc107;
+      font-weight: 600;
+    }
+
+    .contact-box p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body style="padding-top:80px">
+
+<%- include("navbar") %>
+
+<!-- ABOUT ME -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>About <span class="highlight">Me</span></h2>
+      <p>I am a passionate Full Stack Developer building scalable and modern web applications.</p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h4>Hello 👋</h4>
+          <p>
+            I specialize in developing full-stack web applications using
+            <span class="highlight">Node.js, Express, EJS, and MongoDB</span>.
+            I love solving problems and creating beautiful user experiences.
+          </p>
+          <p>
+            My goal is to build secure, fast, and scalable applications
+            that provide real value to users.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-custom contact-box">
+          <h4>Contact Information</h4>
+          <p><strong>Email:</strong> example@gmail.com</p>
+          <p><strong>Phone:</strong> 9876543210</p>
+          <p><strong>Location:</strong> India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" style="background:#1f2937;">
+  <div class="container">
+    <div class="section-title">
+      <h2>Work <span class="highlight">Experience</span></h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h5>Full Stack Developer Intern</h5>
+          <p><strong>Company:</strong> ABC Tech</p>
+          <p><strong>Duration:</strong> 6 Months</p>
+          <p>Worked on building REST APIs and frontend dashboards using Node.js and Bootstrap.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h5>Web Developer</h5>
+          <p><strong>Freelance Projects</strong></p>
+          <p>Developed multiple responsive websites and CRUD applications for clients.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>My <span class="highlight">Projects</span></h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card-custom">
+          <h5>Portfolio Website</h5>
+          <p>Built using Node.js, Express & EJS with responsive UI.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom">
+          <h5>Student Management System</h5>
+          <p>Full CRUD application with authentication and dashboard.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom">
+          <h5>E-Commerce App</h5>
+          <p>Online shopping platform with cart and payment integration.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

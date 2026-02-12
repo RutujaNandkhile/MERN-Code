@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects & Skills</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    /* ==========================
+       NAVBAR FIX SPACE
+    ========================== */
+    .page-hero {
+      padding: 120px 0 60px;
+      text-align: center;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
+    }
+
+    .page-hero span {
+      color: #ffc107;
+    }
+
+    /* ==========================
+       SKILLS SECTION
+    ========================== */
+
+    .skills-section {
+      background: #5a93cc;
+      padding: 80px 0;
+    }
+
+    .progress {
+      height: 20px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      font-weight: 500;
+    }
+
+    /* ==========================
+       PROJECT SECTION
+    ========================== */
+
+    .projects-section {
+      background: #ffffff;
+      padding: 80px 0;
+    }
+
+    .project-card {
+      background: linear-gradient(145deg, #1f2937, #111827);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.4s;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      height: 100%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card h5 {
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+<%- include("navbar") %>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1 class="fw-bold">My <span>Projects</span> & Skills</h1>
+    <p>Building modern and scalable web applications</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+  <div class="container">
+    <h2 class="text-center mb-5">Technical Skills</h2>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h6>HTML / CSS</h6>
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h6>JavaScript</h6>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 85%">85%</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h6>Node.js</h6>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 80%">80%</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h6>Express.js</h6>
+        <div class="progress">
+          <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section">
+  <div class="container">
+    <h2 class="text-center mb-5">My Projects</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>Portfolio Website</h5>
+          <p>Personal portfolio built using Node.js, Express & EJS.</p>
+          <a href="#" class="btn btn-outline-warning btn-sm">View Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>Student Management System</h5>
+          <p>CRUD application with authentication and dashboard.</p>
+          <a href="#" class="btn btn-outline-warning btn-sm">View Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="project-card">
+          <h5>E-Commerce App</h5>
+          <p>Online shopping platform with cart and payment system.</p>
+          <a href="#" class="btn btn-outline-warning btn-sm">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
