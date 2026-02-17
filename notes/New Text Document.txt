@@ -5,3 +5,7 @@ what is middle ware
 what is nextjs
 what is mvc architechre
 what is middleware
+
+
+/app.en
+app.set('view engine','ejs')
